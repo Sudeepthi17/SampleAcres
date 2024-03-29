@@ -3,7 +3,7 @@
 Feature: Tenant 
   I want to use this template for my feature file
 
- 
+ @sanitytest
   Scenario: To Rent a home option
    Given user is logged into the website
    When the user selects All india option a dropdown is visable
@@ -31,7 +31,7 @@ Feature: Tenant
    Then the user selects commercial property for rent in hyderabad as option
    Then the user selects few filters
    Then the user will shotlist the property and contacts the owner
-   
+
   Scenario: Rent a home
    Given user is logged into the website
    When the user selects For tenats as option
@@ -39,5 +39,11 @@ Feature: Tenant
    Then the user selects for rent in Mumbai as option
    Then the user selects filters
    Then the user shotlists the property and contacts owner
-   
-   
+ 
+  Scenario: Insights
+    Given user is logged into the website
+    When the user selects For tenats as option 
+    When the user selects the Insights as option
+    Then the user will select ratings and review as option
+    Then the user will select hyderabad reviews and scroll
+    

@@ -4,7 +4,8 @@ import io.cucumber.testng.CucumberOptions;
  
 @CucumberOptions(
 		features="Features",
-		glue="stepdefinitions")
+		glue="stepdefinitions",
+		tags="@sanitytest")
 
 public class RunnerSample extends AbstractTestNGCucumberTests{
 

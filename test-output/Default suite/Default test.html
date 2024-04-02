@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 29 16:20:26 IST 2024</td>
+<td>Started on:</td><td>Tue Apr 02 11:35:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22163 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11648 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.RunnerSample.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerSample<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Rent a home option", "Tenant"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div/div/div[5]/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/div&quot;}
+<td title='runner.runnerSample.runScenario()'><b>runScenario</b><br>Test class: runner.runnerSample<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pg/Co living", "Tenant"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&quot;https://www.99acres.com/pg-in-hyderabad-ffid&quot; and contains(text(),&quot;PG in Hyderabad&quot;)]&quot;}
   (Session info: chrome=123.0.6312.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3ea655619a63d6370ea706136378a560, findElement {value=/html/body/div[1]/div/div/div[5]/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/div, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65127/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3ea655619a63d6370ea706136378a560
+Command: [9ed92d1ef050347c96a0db4db37878af, findElement {using=xpath, value=//a[@href=&quot;https://www.99acres.com/pg-in-hyderabad-ffid&quot; and contains(text(),&quot;PG in Hyderabad&quot;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52819/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ed92d1ef050347c96a0db4db37878af
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -105,19 +105,19 @@ Session ID: 3ea655619a63d6370ea706136378a560
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at pages.TenantPF.Home(TenantPF.java:94)
-	at stepdefinitions.Tenants.selects_the_desired_property(Tenants.java:102)
-	at ✽.selects the desired property(file:///C:/Users/KSUDEEPT/eclipse-workspace/Acres99_Project/Features/Tenants.feature:16)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1123862502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1123862502'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div/div/div[5]/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/div&quot;}
+	at pages.pgPF.PgHyd(pgPF.java:51)
+	at stepdefinitions.tenants.the_user_selects_pg_in_hyderabad_as_option(tenants.java:120)
+	at ✽.the user selects pg in hyderabad as option(file:///C:/Users/KSUDEEPT/eclipse-workspace/Acres99_Project/Features/Tenants.feature:54)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2124261761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2124261761'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&quot;https://www.99acres.com/pg-in-hyderabad-ffid&quot; and contains(text(),&quot;PG in Hyderabad&quot;)]&quot;}
   (Session info: chrome=123.0.6312.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3ea655619a63d6370ea706136378a560, findElement {value=/html/body/div[1]/div/div/div[5]/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/div, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65127/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3ea655619a63d6370ea706136378a560
+Command: [9ed92d1ef050347c96a0db4db37878af, findElement {using=xpath, value=//a[@href=&quot;https://www.99acres.com/pg-in-hyderabad-ffid&quot; and contains(text(),&quot;PG in Hyderabad&quot;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52819/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ed92d1ef050347c96a0db4db37878af
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -137,12 +137,12 @@ Session ID: 3ea655619a63d6370ea706136378a560
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at pages.TenantPF.Home(TenantPF.java:94)
-	at stepdefinitions.Tenants.selects_the_desired_property(Tenants.java:102)
-	at ✽.selects the desired property(file:///C:/Users/KSUDEEPT/eclipse-workspace/Acres99_Project/Features/Tenants.feature:16)
+	at pages.pgPF.PgHyd(pgPF.java:51)
+	at stepdefinitions.tenants.the_user_selects_pg_in_hyderabad_as_option(tenants.java:120)
+	at ✽.the user selects pg in hyderabad as option(file:///C:/Users/KSUDEEPT/eclipse-workspace/Acres99_Project/Features/Tenants.feature:54)
 </pre></div></td>
-<td>21</td>
-<td>runner.RunnerSample@353352b6</td></tr>
+<td>11</td>
+<td>runner.runnerSample@353352b6</td></tr>
 </table><p>
 </body>
 </html>

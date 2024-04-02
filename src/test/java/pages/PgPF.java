@@ -1,39 +1,46 @@
 package pages;
 
-import java.util.Set;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PgPF {
+public class pgPF {
 	WebDriver driver;
 	 
-	public PgPF(WebDriver driver) {
+	public pgPF(WebDriver driver) {
 		this.driver= driver;
 	    PageFactory.initElements( driver, this);
 	}
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/ul/li[2]/span")
+	@FindBy(xpath="//span[@data-label=\"PG/CO-LIVING\" and contains(text(),\"PG/CO-LIVING\")]")
 	WebElement PgOpt;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/ul/li[2]/div/ul/li/div/ul/li[4]/a")
+	@FindBy(xpath="//a[@href=\"https://www.99acres.com/pg-in-hyderabad-ffid\" and contains(text(),\"PG in Hyderabad\")]")
 	WebElement PgHyd;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div/div[5]/div[3]/div[1]/div[3]/div[1]/div/div/div/div/div/div[2]/span[2]")
+	@FindBy(xpath="//span[text()=\"Verified\"]")
 	WebElement Verified;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div/div[5]/div[3]/div[1]/div[3]/div[1]/div/div/div/div/div/div[3]/span[2]")
+	@FindBy(xpath="//div[@datalabel=\"FURNISHED_NUDGE\"]")
 	WebElement Furnish;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div/div[5]/div[3]/div[1]/div[3]/div[1]/div/div/div/div/div/div[4]/span[2]")
+	@FindBy(xpath="//div[@datalabel=\"GIRLS\"]")
 	WebElement ForGirls;
 	
-	@FindBy(xpath="//a[@href=\\\"https://www.99acres.com/paying-guest-pg-for-rent-in-anjaiah-nagar-hyderabad-spid-C73620055\\")
+	@FindBy(xpath="/html/body/div[1]/div/div/div[5]/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/div[1]/div/div[2]/a/h2/span")
 	WebElement SelPg;
 	
 	@FindBy(xpath="/html/body/div[1]/div/div[2]/section[1]/div/div/div[2]/div[3]/a")
 	WebElement ContactOwner;
+	
+//	@FindBy(xpath="//div[contains(@class,'component__segment')]//div[contains(@class,'undefined')]//div//input[@name='name']")
+//	WebElement Name;
+//	
+//	@FindBy(xpath="/html/body/div[1]/div/div[4]/div[1]/div[4]/form/div[1]/div[3]/div[2]/div[1]/div[1]/input")
+//	WebElement Phonenum;
+//	
+//	@FindBy(xpath="/html/body/div[1]/div/div[4]/div[1]/div[4]/form/div[1]/div[3]/div[3]/div[1]/input")
+//	WebElement Email;
 	
 	public void PgOpt() throws InterruptedException {
 		PgOpt.click();
@@ -66,14 +73,21 @@ public class PgPF {
 	}
 	
 	public void ContactOwner() throws InterruptedException {
-		String parenthandle = driver.getWindowHandle();
-		Set<String> handle = driver.getWindowHandles();
-				for(String s:handle) {
-					driver.switchTo().window(s);
-				}
 		ContactOwner.click();
 		Thread.sleep(2000);
 	}
+//	
+//	public void Name(String name) {
+//		Name.sendKeys(name);
+//	}
+//	
+//	public void Phonenum(String phone) {
+//		Phonenum.sendKeys(phone);
+//	}
+//	
+//	public void Email(String email) {
+//		Email.sendKeys(email);
+//	}
 	
 	
 }

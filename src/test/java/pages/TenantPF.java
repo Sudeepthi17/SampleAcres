@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TenantPF {
+public class tenantPF {
 	WebDriver driver;
 	 
-	public TenantPF(WebDriver driver) {
+	public tenantPF(WebDriver driver) {
 		this.driver= driver;
 	    PageFactory.initElements( driver, this);
 	}
@@ -21,20 +21,17 @@ public class TenantPF {
 	@FindBy(xpath="//span[text()=\"View top cities\"]")
 	WebElement TopCities;
  
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div[2]/div[1]/div[2]/div/div/div[2]/div[2]/ul[1]/a[6]/li")
+	@FindBy(xpath="//*[@id=\"app\"]/div/div[2]/div[2]/div[1]/div[2]/div/div/div[2]/div[2]/ul[1]/a[6]/li")
 	WebElement Hyderabad;
  
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div[2]/div[2]/div[1]/div[2]/a")
+	@FindBy(xpath="//a[@href=\"#\" and contains(text(),\"For Tenants\")]")
 	WebElement Tenants;
  
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/ul/li[1]/span")
+	@FindBy(xpath="//span[@data-label=\"RENT A HOME\" and contains(text(),\"RENT A HOME\")]")
 	WebElement RentHome;
  
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/ul/li[1]/div/ul/li[1]/div/ul/li[3]/a")
+	@FindBy(xpath="//a[@href=\"https://www.99acres.com/independent-house-for-rent-in-hyderabad-ffid\" and contains(text(),\"Independent House\")]")
 	WebElement Independent;
-	
-	@FindBy(xpath="/html/body/div[1]/div/div/div[5]/div[1]/div/div/div/div[5]/div")
-	WebElement PopUp;
  
 	@FindBy(xpath="/html/body/div[1]/div/div/div[5]/div[3]/div[1]/div[3]/div[1]/div/div[3]/span[2]")
 	WebElement Furnished;
@@ -67,18 +64,6 @@ public class TenantPF {
 	}
 	public void Independent() throws InterruptedException {
 		Independent.click();
-		Thread.sleep(2000);
-	}
-	public void PopUp() throws InterruptedException {
-		String parenthandle = driver.getWindowHandle();
-		Set<String> handle = driver.getWindowHandles();
-				for(String s:handle) {
-					if(!s.equals(parenthandle)) {
-						driver.switchTo().window(s);
-					}
-					
-				}
-		PopUp.click();
 		Thread.sleep(2000);
 	}
 	public void Furnished() throws InterruptedException {
